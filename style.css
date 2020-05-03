@@ -61,6 +61,7 @@ h1{
   padding: 20px 35px;
   color: hsl(204, 43%, 93%);
   background-color: hsl(179, 62%, 43%);
+  border-bottom-left-radius: 10px;
 }
 
 .dollar{
@@ -92,6 +93,7 @@ button{
   padding: 20px 35px;
   color: hsl(204, 43%, 93%);
   background-color: rgb(74,190,189);
+  border-bottom-right-radius: 10px;
 }
 
 .feature p{
@@ -103,4 +105,45 @@ footer{
   position: fixed;
   bottom: 0;
   left: calc((100vw - 336.81px)/2);
+}
+
+@media (max-width: 425px){
+  .container{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width: 310px;
+    height: 720px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.05), 0 5px 20px rgba(0, 0, 0, 0.05);
+  }
+
+  .top{
+    height: 265px;
+    padding: 30px 25px;
+    font-size: 80%;
+  }
+
+  .top h1{
+    font-size: 20px;
+  }
+
+  .price{
+    padding: 10px 25px 20px 25px;
+    border-bottom-left-radius: unset;
+  }
+
+  button{
+    width: 260px;
+  }
+
+  .feature{
+    padding: 10px 25px 20px 25px;
+    border-bottom-left-radius: 10px;
+  }
+
 }
